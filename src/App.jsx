@@ -21,7 +21,7 @@ const App = () => {
             <ul>
                 <li><strong>Account</strong> means a unique account created for You to access Our Service.</li>
                 <li><strong>Application</strong> refers to MyHandydash, the software program provided by the Company.</li>
-                <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our") refers to Handysolver, C 705 Pioneer Urban Square Golf Course Extension Road, Sector 62, Gurgaon, Haryana, India - 122101.</li>
+                <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our") refers to Handysolver, C 705, Pioneer Urban Square Golf Course Extension Road, Sector 62, Gurugram, Haryana, India - 122101.</li>
                 <li><strong>Device</strong> means any device that can access the Service, such as a cellphone or a digital tablet.</li>
                 <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
                 <li><strong>Service</strong> refers to the Application.</li>
