@@ -37,7 +37,11 @@ const App = () => {
             <ul>
                 <li><strong>Name and Phone Number:</strong> Used for creating and managing Your account and for secure login.</li>
                 <li><strong>Location Information:</strong> The Application collects Your precise location in the background to enable geo-fencing functionality. This is a core feature that allows You to "Mark In" or "Mark Out" only when You are within a pre-defined work location. Your location is collected only when you are "Marked In" to provide accurate attendance and tracking for your organization.</li>
-                <li><strong>Facial Data:</strong> The Application may use Your device's camera to take a picture for facial verification when you mark attendance. This data is used solely for the purpose of verifying Your identity and is not stored or shared with any third parties. It is processed on the device to generate a unique identifier that is then compared with the stored facial identifier of the user.</li>
+                <li><strong>Facial Data:</strong> We use your device's camera to capture a facial image for the purpose of identity verification when you mark attendance. The captured image is immediately sent to a third-party Service Provider, Face++, to perform face detection and recognition. Face++ provides us with a unique Facial Token which is then stored in our database.
+
+When you "Mark IN" or "Mark OUT" with facial verification enabled, we send a newly captured image to Face++ to generate another Facial Token. We then use Face++'s face comparison service to compare this new token with the stored token. Based on a similarity score, we verify your identity and allow the attendance to be marked.
+
+The facial images themselves are not stored on our servers. However, the facial tokens are stored to facilitate future comparisons. This data is used solely for attendance verification and is not used for any other purpose. For more information, please review the Face++ Privacy Policy at <a href="https://www.faceplusplus.com/privacy-policy/" target="_blank">https://www.faceplusplus.com/privacy-policy/</a>.</li>
                 <li><strong>Usage Data:</strong> Information such as Your Device's IP address, device type, mobile operating system, and unique device identifiers are collected to monitor and analyze the use of the Service.</li>
             </ul>
 
